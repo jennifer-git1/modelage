@@ -9,12 +9,25 @@
 
 <body>
   <a-scene>
-    <a-box position="0 0 -4"
-           rotation="0 0 0"
-           color=#FF0000>
+    <a-assets>
+  <a-asset-item id="suzanne" src="suzanne.glb"></a-asset-item>
+
+      </a-assets>
+      <a-entity gltf-model="#suzanne" position=", 2 -4"> </a-entity>
+    <a-box   width="1" height="1 depth=1"
+            position="0 1 -4"
+           rotation="45 45 0"
+           color="#7BC8A"
              </a-box>
-             <a-box position="0 0 -6" rotation="" color="#FF0000" material="color: #aed4ff" geometry="">
-             </a-box>
+
+             <a-plane position="0 0 -4"
+                      rotation="-90 0 0"
+                      width="4" height="4"
+
+
+                      </a-plane>
+
              <a-camera></a-camera>
              </a-scene>
+           </body>
   <:html>
