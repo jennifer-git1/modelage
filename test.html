@@ -9,12 +9,22 @@
 
 <body>
   <a-scene>
-    <a-box position="0 0 -4"
-           rotation="0 0 0"
-           color=#FF0000>
+    <a-assets>
+
+      <img id="texture" src="grass.jpg">
+      </a-assets>
+    <a-box   width="1" height="1 depth=1"
+            position="0 1 -4"
+           rotation="45 45 0"
+            src="#texture">
              </a-box>
-             <a-box position="0 0 -6" rotation="" color="#FF0000" material="color: #aed4ff" geometry="">
-             </a-box>
+
+             <a-plane position="0 0 -4"
+                      rotation="-90 0 0"
+                      width="4" height="4"
+                      color=#7BC8A4>
+                      </a-plane>
+
              <a-camera></a-camera>
              </a-scene>
   <:html>
