@@ -12,7 +12,7 @@
     <a-assets>
   <a-asset-item id="suzanne" src="suzanne.glb"></a-asset-item>
 
-      </a-assets>
+      
       <a-entity gltf-model="#suzanne" position=", 2 -4"> </a-entity>
     <a-box   width="1" height="1 depth=1"
             position="0 1 -4"
